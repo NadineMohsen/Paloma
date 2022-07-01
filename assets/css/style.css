@@ -70,4 +70,11 @@ h1{
     h1{
         font-size:250%;
     }
+    .nav p{
+        font-size:120%;  
+    }
+    .nav-elements{
+        transform: rotate(90deg);
+
+    }
   }
