@@ -55,6 +55,11 @@ h1{
     font-size:350%;
     opacity: 70%;   
 }
+.nav p:hover{
+    transform:translateY(80px);
+    transition-duration: 1s;
+    color:brown;
+}
 @media screen and (max-width: 1400px) {
     .custom-header {
         background-image: url('../images/paloma-ss.png');
