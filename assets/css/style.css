@@ -92,17 +92,17 @@ h1{
     flex-direction: column;
     text-align: right;
 }
-.desc-text {
+.custom-hear-content h2 {
     letter-spacing: 0.1em;
     text-transform: capitalize;
     font-family: "Anton";
     line-height: 83.2px;
-    font-size: 64px;
+    font-size: 150%;
   }
-.custom-btn {
-  margin-top:10px;
+.custom-btn{
+  margin-top:2px;
   line-height: 28px;
-  padding: 10px;
+  padding: 7px;
   background-color: brown;
   opacity: 0.6;
   outline: none;
@@ -110,6 +110,9 @@ h1{
   font-family: "Arial";
   border-radius: 10px;
   border: none;
+}
+.custom-btn a{
+  font-size:70%;
 }
 .custom-btn:hover {
   opacity:1;
@@ -147,10 +150,13 @@ h1{
     }
     .custom-hear-content {
       flex-direction: column;
-  }
-  .custom-hear-content-light {
-    margin: 2rem 0;
-  }
+     }
+    .custom-hear-content-light {
+      margin: 0.2rem;
+     }
+    .custom-hear-content h2{
+     font-size:120%;
+     }
   }
 
 
