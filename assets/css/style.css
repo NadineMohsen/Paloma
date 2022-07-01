@@ -3,7 +3,7 @@
     --color-light: #ffffff;
   }
 
-  * {
+* {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
@@ -11,7 +11,7 @@
     font-size:30px;
     overflow:hidden;
   }
-  body{
+body{
     background-color: var(--color-black);
     color:var(--color-light);
 }
@@ -28,15 +28,29 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .padding-section {
+.padding-section {
     padding: 1rem;
 }
-
+.nav{
+    font-family:'Anton';
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    bottom:0;
+}
+h1{
+    font-size:450%;
+    line-height: 243px;
+    letter-spacing: 0px;
+    font-family:"Chonburi";
+}
 @media screen and (max-width: 1400px) {
     .custom-header {
         background-image: url('../images/paloma-ss.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    h1{
+        font-size:250%;
     }
   }
