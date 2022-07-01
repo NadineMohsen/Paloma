@@ -31,3 +31,12 @@
   .padding-section {
     padding: 1rem;
 }
+
+@media screen and (max-width: 1400px) {
+    .custom-header {
+        background-image: url('../images/paloma-ss.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
