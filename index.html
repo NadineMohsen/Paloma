@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
-
     <!-- Link to css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Title -->
@@ -12,8 +11,9 @@
     <!-- Icon -->
     <link rel="shortcut icon" type="image/ico" href="./assets/images/sing.png">
   </head>
-
   <body>
+
+    <!-- nav section with title and nav links to different parts of the page -->
     <div class="custom-wrap custom-header padding-section"> 
         <div class="nav">
         <h1>
@@ -64,6 +64,7 @@
         </div>
     </div>
 
+    <!-- hear section -->
     <div class="custom-hear custom-flex-center" id="hear">
     <div class="custom-hear-overlay custom-flex-center">
       <img src="./assets//images/headphones.png" alt="headphones" />
@@ -74,7 +75,7 @@
         <h2>Latest Songs</h2>
     
         <button type="button" class="custom-btn">
-        <a href="https://www.youtube.com/">
+        <a href="https://www.youtube.com/results?search_query=paloma+faith">
           Hear Now
         </a>
         </button>
@@ -88,7 +89,7 @@
         <h2>Buy Tickets</h2>
 
         <button type="button" class="custom-btn">
-        <a href="https://www.youtube.com/" >
+        <a href="https://www.viagogo.co.uk/Concert-Tickets/Rock-and-Pop/Paloma-Faith-Tickets?AffiliateID=49&adposition=&PCID=PSGBGOOCONPALOMCCEBC39A20&AdID=603646670835&MetroRegionID=&psc=%2c&ps=%2c&ps_p=0&ps_c=11205087593&ps_ag=112413251920&ps_tg=kwd-362995904104&ps_ad=603646670835&ps_adp=%2c&ps_fi=%2c&ps_li=%2c&ps_lp=1006884&ps_n=g&ps_d=c&gclid=Cj0KCQjwtvqVBhCVARIsAFUxcRvFS5NRe_ewujZOefp9VvbVRqv0ZJHltAL8peQ7a5fOJalKRW00c0oaAr9fEALw_wcB" >
           Book Now
         </a>
 
@@ -97,12 +98,21 @@
     </div>
     </div>
  
-  
-
-
-
-
-
-    
+    <!-- tour video section -->
+    <div class="video" id="tour">
+      <video
+      ref="videoRef"
+      src="./assets/images/concert.mp4"
+      type="video/mp4"
+      loop
+      muted
+      autoplay
+    >
+    </video>
+    <div class="txt">
+      <h3>P A L O M A</h3>
+    </div>
+    </div>
+ 
   </body>
   </html>
