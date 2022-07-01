@@ -11,7 +11,8 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size:30px;
-    overflow:hidden;
+    overflow-x: clip;
+    /* overflow:hidden; */
   }
 body{
     background-color: var(--color-black);
@@ -52,7 +53,7 @@ h1{
 .nav p{
     text-transform: uppercase;
     font-weight:400;
-    font-size:350%;
+    font-size:320%;
     opacity: 70%;   
 }
 .nav p:hover{
@@ -60,6 +61,74 @@ h1{
     transition-duration: 1s;
     color:brown;
 }
+.custom-hear {
+    position: relative;
+    margin-top:50px;
+    padding:20px;
+}
+.custom-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-hear-overlay {
+    inset: 0;
+    position: absolute;
+}
+.custom-hear-overlay img{
+    z-index: 0;
+    width: 392px;
+    height: 416px;
+}
+.custom-hear-content {
+    z-index: 2;
+    width: 100%;
+}
+.custom-hear-content-songs {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+.desc-text {
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-family: "Anton";
+    line-height: 83.2px;
+    font-size: 64px;
+  }
+.custom-btn {
+  margin-top:10px;
+  line-height: 28px;
+  padding: 10px;
+  background-color: brown;
+  opacity: 0.6;
+  outline: none;
+  cursor: pointer;
+  font-family: "Arial";
+  border-radius: 10px;
+  border: none;
+}
+.custom-btn:hover {
+  opacity:1;
+}
+.custom-hear-content-light {
+    margin: 2rem 4rem;
+}
+.custom-hear-content-light img {
+    height: 710px;
+}
+.custom-hear-content-buy {
+    flex: 1;
+    text-align: left;
+    justify-content: flex-start;
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 1400px) {
     .custom-header {
         background-image: url('../images/paloma-ss.png');
@@ -75,6 +144,20 @@ h1{
     }
     .nav-elements{
         transform: rotate(90deg);
-
     }
+    .custom-hear-content {
+      flex-direction: column;
   }
+  .custom-hear-content-light {
+    margin: 2rem 0;
+  }
+  }
+
+
+@media screen and (max-width: 650px) {
+    .custom-hear-overlay img {
+        width: 80%;
+        height: 320px;
+    }
+}
+
